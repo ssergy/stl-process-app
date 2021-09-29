@@ -18,7 +18,7 @@ const perspectives = [[0, 0, 1], [0, 1, 0], [1, 0, 0]];
 
 function Main(props) {
   const {walls} = props;
-  const [url, setUrl] = useState('/data/Eiffel_tower_sample.stl');
+  const [url, setUrl] = useState(null);// '/data/Eiffel_tower_sample.stl'
   const [upVal, setUpVal] = useState([0, 0, 1]);
 
   // handleFileLoad - load model
@@ -38,7 +38,7 @@ function Main(props) {
 
       <Canvas style={{height: "100vh", width: "100vw"}}>
         <Suspense fallback={null}>
-          <Model3d url={url}/>
+          {url && <Model3d url={url}/>}
           <Walls items={walls}/>
           {/*<gridHelper args={[100, 10]} position={[0, 0, 0]} />*/}
           <axesHelper args={[100, 10]}/>
