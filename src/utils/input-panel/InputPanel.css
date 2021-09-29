@@ -1,0 +1,14 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 300px 200px 200px;
+    padding: 2px;
+}
+
+.input-box {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+

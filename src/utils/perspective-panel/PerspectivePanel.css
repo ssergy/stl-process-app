@@ -1,0 +1,10 @@
+.perspective-panel {
+    float: right;
+    margin-right: 10px;
+    width: 100px;
+    height: 50px;
+    border: 1px solid gray;
+    z-index: 100;
+    background-color: #FFF;
+    padding: 20px;
+}
